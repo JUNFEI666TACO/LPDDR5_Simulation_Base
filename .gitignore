@@ -1,0 +1,85 @@
+# Secrets and machine-local credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ecdsa
+id_ed25519
+.ssh/
+.aws/
+secrets/
+credentials.json
+token.json
+service-account*.json
+
+# Windows / macOS / editors
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+__MACOSX/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+*~
+# Keep shared VS Code tasks/settings unless they contain local secrets.
+.vscode/*.local.json
+
+# Python: keep source, requirements, lockfiles and notebooks
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.coverage
+.coverage.*
+htmlcov/
+
+# Reproducible build output; do not blanket-ignore .bin/.hex/.lib
+build/
+dist/
+out/
+.pio/
+.pioenvs/
+.piolibdeps/
+cmake-build-*/
+
+# KiCad: keep .kicad_pro/.kicad_sch/.kicad_pcb and custom libraries
+*.kicad_prl
+*.kicad_pcb.lck
+*.kicad_sch.lck
+~*.lck
+*-backups/
+_autosave-*
+
+# Ansys AEDT solver output / locks; keep .aedt and .aedb source projects
+*.aedtresults/
+*.aedt.lock
+*.aedt.auto
+*.aedt.asv
+
+# LTspice waveform output and logs
+# If .raw is irreplaceable measurement input, add a narrow exception below.
+*.raw
+*.log
+
+# Put regenerable simulation exports here. Keep inputs elsewhere.
+sim-results/
+
+# MATLAB autosave; keep .m/.mlx/.slx/.mat and S-parameter data
+*.asv
+slprj/

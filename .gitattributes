@@ -1,0 +1,28 @@
+# Consistent text on Windows and macOS; binary detection stays enabled.
+* text=auto eol=lf
+
+# Windows command scripts require CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Known binary formats: avoid text conversion / textual merges.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.7z binary
+*.exe binary
+*.dll binary
+*.bin binary
+*.elf binary
+*.mat binary
+*.mlx binary
+*.slx binary
+*.PcbDoc binary
+*.SchDoc binary
+
+# Enable Git LFS only after selecting actual large source assets.
+# Example command: git lfs track "models/large-package.step"
